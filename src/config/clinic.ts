@@ -1,307 +1,337 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Edu Roldán Fisioterapia",
+  logo: "/images/logo.png",
+  tagline: "Tu fisioterapia de confianza en Araba",
+  description: "Edu Roldán Fisioterapia es tu centro de fisioterapia especializado en Araba, Álava. Con 5 estrellas en Google y 29 reseñas, nuestro equipo liderado por Edu y Nerea ofrece tratamiento personalizado para lesiones deportivas, problemas lumbares, bursitis de hombro, contracturas y rehabilitación. Aplicamos técnicas manuales avanzadas y diferentes metodologías adaptadas a cada caso para lograr tu recuperación completa.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#2563EB",
+    secondary: "#1E293B",
+    accent: "#06B6D4",
+    neutral: "#F8FAFC"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "623 18 73 33",
+  whatsapp: "+34623187333",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Coronela Ibaibarriaga Kalea, 3, 01010 Vitoria-Gasteiz, Araba, España",
+    city: "Araba",
+    province: "Álava",
+    postalCode: "01010",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=149038211240230497&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Edu%20Rold%C3%A1n%20Fisioterapia%20%4042.8569%2C-2.69145&z=16&output=embed",
+  coordinates: {
+    lat: 42.8569,
+    lng: -2.69145
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "8:30–20:30"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 29,
+    url: "https://maps.google.com/?cid=149038211240230497&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Txema Arza Otegui",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Estupendo profesional(Edu y equipo)\nYa he acudido a varias sesiones de tratamiento y he notado una notable mejoria, tanto en el problema del hombro(bursitis) como con la zona lumbar(artrosis lumbar) y espalda.\nAltamente recomendable!!",
+        date: "Hace 5 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Andone",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "📌Esta mañana puntualidad absoluta,por mi horario laboral lo necesitaba. La atención de Nerea de 10!el masaje para mis contracturas ha sido maravilloso, con ganas de volver en breve de nuevo..",
+        date: "Hace 11 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Esther Jaurrieta Resano",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Tanto Edu como Nerea son grandes profesionales y ofrecen siempre un trato extraordinario. Acudo a ellos siempre que el lumbago viene a visitarme y los recomiendo al 1000%",
+        date: "Hace 5 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "ainhoa martinez de estibariz martin",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Trato personalizado y muy profesional. Se toma su tiempo para evaluar cada caso. Muy recomendable ya que tiene diferentes técnicas para resolver el problema.",
+        date: "Hace 5 meses"
       },
-    ],
+      {
+        author: "Sofía",
+        rating: 5,
+        text: "Me atendió Nerea, profesional 100% me solucionó el problema. Agradecida y volveré a repetir cuando necesite.",
+        date: "Hace 6 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Manual",
+      description: "Técnicas manuales especializadas que constituyen nuestra base de tratamiento. Evaluamos cada caso con tiempo y dedicación para aplicar las maniobras más efectivas. Ideal para contracturas, problemas articulares y dolor musculoesquelético.",
+      benefits: [
+        "Alivio inmediato del dolor y contracturas",
+        "Mejora de la movilidad articular y flexibilidad",
+        "Tratamiento personalizado según tu problema específico"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "tratamiento-lumbar",
+      name: "Tratamiento Lumbar y Espalda",
+      description: "Especialistas en lumbalgias, artrosis lumbar y problemas de espalda. Nuestros pacientes acuden a nosotros cuando el lumbago viene a visitarles y logran mejorías notables. Combinamos diferentes técnicas para resolver el origen del problema.",
+      benefits: [
+        "Reducción efectiva del dolor lumbar crónico",
+        "Tratamiento de artrosis y degeneración lumbar",
+        "Prevención de recaídas con seguimiento personalizado"
+      ],
+      icon: "Activity"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "lesiones-hombro",
+      name: "Lesiones de Hombro",
+      description: "Tratamiento especializado para bursitis, tendinitis y problemas de movilidad del hombro. Aplicamos técnicas específicas que han demostrado mejorías notables en nuestros pacientes. Recupera el movimiento sin dolor.",
+      benefits: [
+        "Resolución efectiva de bursitis y tendinitis",
+        "Recuperación completa de la movilidad",
+        "Eliminación del dolor en actividades cotidianas"
+      ],
+      icon: "Target"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "masaje-terapeutico",
+      name: "Masaje Terapéutico",
+      description: "Masajes terapéuticos especializados para contracturas musculares y tensión acumulada. Nuestros pacientes destacan la efectividad y profesionalidad de nuestros tratamientos. Técnicas adaptadas a tus necesidades específicas.",
+      benefits: [
+        "Eliminación de contracturas y tensión muscular",
+        "Mejora de la circulación y recuperación tisular",
+        "Sensación de bienestar y relajación profunda"
+      ],
+      icon: "Heart"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Recuperación y prevención de lesiones deportivas con técnicas avanzadas. Tratamos desde lesiones agudas hasta problemas crónicos que limitan tu rendimiento. Vuelve a tu actividad deportiva con seguridad.",
+      benefits: [
+        "Recuperación rápida de lesiones deportivas",
+        "Prevención de recaídas y nuevas lesiones",
+        "Optimización del rendimiento físico"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "rehabilitacion",
+      name: "Rehabilitación Personalizada",
+      description: "Programas de rehabilitación diseñados específicamente para tu caso. Seguimiento continuo hasta tu completa recuperación con ejercicios y técnicas adaptadas a tu evolución. Recupera tu funcionalidad paso a paso.",
+      benefits: [
+        "Plan de tratamiento adaptado a tu evolución",
+        "Recuperación funcional completa y duradera",
+        "Ejercicios específicos para tu problema"
+      ],
+      icon: "Activity"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "puncion-seca",
+      name: "Punción Seca",
+      description: "Técnica especializada para el tratamiento de puntos gatillo miofasciales. Eliminamos contracturas profundas y dolor crónico que no responde a otros tratamientos. Resultados efectivos en pocas sesiones.",
+      benefits: [
+        "Eliminación de puntos gatillo y contracturas profundas",
+        "Alivio del dolor crónico muscular",
+        "Resultados rápidos y duraderos"
+      ],
+      icon: "Target"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "electroterapia",
+      name: "Electroterapia",
+      description: "Tecnología terapéutica avanzada con corrientes eléctricas para acelerar tu recuperación. Complementamos nuestras técnicas manuales con equipamiento de última generación para optimizar resultados.",
+      benefits: [
+        "Aceleración del proceso de recuperación",
+        "Reducción de inflamación y dolor",
+        "Potenciación de los efectos del tratamiento manual"
+      ],
+      icon: "Zap"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Solicita tu Cita",
+      description: "Llámanos al 623 18 73 33 o contacta por WhatsApp. Nos adaptamos a tu horario laboral con puntualidad absoluta. Primera disponibilidad para que comiences tu recuperación cuanto antes."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Detallada",
+      description: "Nos tomamos el tiempo necesario para evaluar tu caso específico. Realizamos una exploración completa para identificar el origen de tu problema y diseñar el tratamiento más efectivo para ti."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Personalizado",
+      description: "Aplicamos las técnicas más adecuadas según tu problema: fisioterapia manual, punción seca, masaje terapéutico o electroterapia. Combinamos diferentes metodologías para resolver tu lesión de forma efectiva."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Recuperación",
+      description: "Acompañamiento continuo hasta tu completa recuperación. Ajustamos el tratamiento según tu evolución y te damos pautas para prevenir recaídas. Nuestro objetivo es tu bienestar duradero."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración 5 Estrellas en Google",
+      description: "Nuestros 29 pacientes nos han valorado con 5 estrellas en Google. Nos recomiendan al 1000% por nuestros resultados efectivos, trato personalizado y profesionalidad. La confianza de quienes ya han recuperado su bienestar con nosotros es nuestra mejor carta de presentación.",
+      icon: "Award"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Trato Personalizado y Dedicado",
+      description: "Nos tomamos el tiempo necesario para evaluar cada caso en profundidad. No aplicamos protocolos genéricos: diseñamos tu tratamiento específico según tu problema. Nuestros pacientes valoran especialmente esta atención individualizada y dedicada que marca la diferencia en los resultados.",
+      icon: "Heart"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Múltiples Técnicas Especializadas",
+      description: "Disponemos de diferentes metodologías y técnicas para resolver tu problema: fisioterapia manual, punción seca, masaje terapéutico, electroterapia y más. Esta versatilidad nos permite abordar cada caso con las herramientas más efectivas y lograr mejorías notables incluso en problemas complejos.",
+      icon: "Target"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Puntualidad y Adaptación a tu Horario",
+      description: "Entendemos que tu tiempo es valioso. Ofrecemos puntualidad absoluta y nos adaptamos a tus necesidades laborales y personales. Nuestros pacientes destacan que pueden contar con nosotros incluso cuando tienen horarios complicados, sin esperas innecesarias ni retrasos.",
+      icon: "Clock"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Edu Roldán",
+      role: "Fisioterapeuta",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Edu Roldán Fisioterapia nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
     },
+    {
+      name: "Nerea",
+      role: "Fisioterapeuta",
+      image: "/images/team/placeholder.jpg",
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Edu Roldán Fisioterapia nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Edu Roldán Fisioterapia - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Edu Roldán Fisioterapia - Imagen 2"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué problemas tratáis en Edu Roldán Fisioterapia?",
+      answer: "En Edu Roldán Fisioterapia somos especialistas en problemas lumbares (lumbalgias, artrosis lumbar), lesiones de hombro (bursitis, tendinitis), contracturas musculares, dolor de espalda y lesiones deportivas. Nuestros pacientes destacan las mejorías notables en estos problemas. Aplicamos diferentes técnicas adaptadas a cada caso para lograr resultados efectivos y duraderos."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cuántas sesiones necesitaré para recuperarme?",
+      answer: "El número de sesiones depende de tu problema específico y su evolución. En la primera cita realizamos una valoración detallada donde te explicamos el plan de tratamiento estimado. Muchos pacientes notan mejorías desde las primeras sesiones, como reflejan nuestras reseñas. Nos tomamos el tiempo necesario en cada sesión para asegurar tu recuperación completa."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cómo puedo pedir cita en vuestra clínica de Araba?",
+      answer: "Puedes solicitar tu cita llamando directamente al 623 18 73 33 o contactando por WhatsApp. Nos adaptamos a tu horario, incluso si tienes necesidades laborales específicas que requieren puntualidad absoluta. Te atenderemos con la mayor brevedad posible para que comiences tu tratamiento cuanto antes."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué técnicas de fisioterapia utilizáis?",
+      answer: "En Edu Roldán Fisioterapia combinamos fisioterapia manual especializada, masaje terapéutico, punción seca, electroterapia y técnicas avanzadas de rehabilitación. Nos caracterizamos por tener diferentes metodologías para resolver cada problema. Evaluamos tu caso con tiempo y aplicamos las técnicas más efectivas según tus necesidades específicas."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Tratáis lesiones deportivas?",
+      answer: "Sí, ofrecemos fisioterapia deportiva especializada para la recuperación y prevención de lesiones. Tratamos desde lesiones agudas hasta problemas crónicos que afectan al rendimiento deportivo. Nuestro enfoque personalizado te ayuda a volver a tu actividad física con seguridad y confianza."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Por qué vuestros pacientes os recomiendan?",
+      answer: "Nuestros pacientes nos valoran con 5 estrellas en Google (29 reseñas) y nos recomiendan al 1000%. Destacan nuestro trato personalizado, profesionalidad, puntualidad absoluta y sobre todo los resultados efectivos. Nos tomamos el tiempo necesario para cada caso y aplicamos las técnicas más adecuadas. Muchos vuelven a nosotros cuando necesitan tratamiento porque confían en nuestra experiencia."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Quién me atenderá en la clínica?",
+      answer: "Nuestro equipo está formado por Edu Roldán y Nerea, ambos fisioterapeutas altamente cualificados. Los pacientes destacan la profesionalidad y el trato extraordinario de ambos. Recibirás atención personalizada de profesionales con amplia experiencia en diferentes técnicas de fisioterapia y un enfoque dedicado a tu recuperación."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Ofrecéis tratamiento para problemas crónicos?",
+      answer: "Sí, tenemos amplia experiencia en el tratamiento de problemas crónicos como artrosis lumbar, lumbalgias recurrentes y dolor persistente. Muchos de nuestros pacientes acuden a nosotros cuando el problema vuelve a aparecer porque saben que lograrán mejorías notables. Combinamos técnicas manuales y terapias avanzadas para resolver incluso los casos más complejos."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Edu Roldán Fisioterapia",
+    defaultTitle: "Edu Roldán Fisioterapia en Araba | 5★ en Google",
+    defaultDescription: "Fisioterapia especializada en Araba, Álava. Tratamiento lumbar, hombro, contracturas y lesiones deportivas. Valoración 5★ con 29 reseñas. Pide cita: 623 18 73 33",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Araba",
+      "fisioterapeuta Álava",
+      "Edu Roldán Fisioterapia",
+      "tratamiento lumbar Araba",
+      "fisioterapia deportiva Álava",
+      "bursitis hombro Araba",
+      "contracturas musculares Álava",
+      "fisioterapia manual Araba",
+      "punción seca Álava",
+      "masaje terapéutico Araba",
+      "rehabilitación Álava",
+      "fisioterapeuta 5 estrellas Araba"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Edu Roldán Fisioterapia",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Coronela Ibaibarriaga Kalea, 3, 01010 Vitoria-Gasteiz, Araba, España, Araba, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Araba"
+  ],
+  heroDescription: "En Edu Roldán Fisioterapia combinamos profesionalidad y trato cercano para resolver tus problemas de espalda, hombro, lumbalgias y contracturas. Nuestro equipo evalúa cada caso con tiempo y dedicación, aplicando las técnicas más efectivas para tu recuperación. Puntualidad, atención personalizada y resultados que nuestros pacientes recomiendan al 1000%.",
+  specialty: "Fisioterapia Manual Especializada",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu bienestar?",
+  ctaDescription: "Solicita tu cita de valoración y descubre por qué nuestros pacientes nos valoran con 5 estrellas. Te evaluaremos con el tiempo necesario y diseñaremos tu plan de recuperación personalizado.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
